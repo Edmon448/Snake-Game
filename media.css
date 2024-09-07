@@ -1,0 +1,195 @@
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+    .menu-bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-bar ul li {
+        margin: 0;
+    }
+
+    .menu-bar ul li a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .game-container {
+        margin: 10px;
+    }
+
+    .difficulty-selection button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #startButton {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .joystick-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .joystick-base {
+        width: 80px;
+        height: 80px;
+    }
+
+    .joystick-handle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-bar ul {
+        flex-direction: row;
+    }
+
+    .menu-bar ul li {
+        margin: 0 5px;
+    }
+
+    .menu-bar ul li a {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .game-container {
+        margin: 15px;
+    }
+
+    .difficulty-selection button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #startButton {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .joystick-container {
+        width: 90px;
+        height: 90px;
+    }
+
+    .joystick-base {
+        width: 90px;
+        height: 90px;
+    }
+
+    .joystick-handle {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .menu-bar ul {
+        flex-direction: row;
+    }
+
+    .menu-bar ul li {
+        margin: 0 10px;
+    }
+
+    .menu-bar ul li a {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .game-container {
+        margin: 20px;
+    }
+
+    .difficulty-selection button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    #startButton {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+
+    .joystick-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .joystick-base {
+        width: 100px;
+        height: 100px;
+    }
+
+    .joystick-handle {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+    .game-container {
+        margin: 5px;
+    }
+
+    .difficulty-selection button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #startButton {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .joystick-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .joystick-base {
+        width: 70px;
+        height: 70px;
+    }
+
+    .joystick-handle {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+    .game-container {
+        margin: 10px;
+    }
+
+    .difficulty-selection button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #startButton {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .joystick-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .joystick-base {
+        width: 80px;
+        height: 80px;
+    }
+
+    .joystick-handle {
+        width: 50px;
+        height: 50px;
+    }
+}

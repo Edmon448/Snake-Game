@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav class="menu-bar">
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+        <ul class="menu-list">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" id="leaderboardBtn">Leaderboard</a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="leaderboardModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Global Scores</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="game-info">
+            <h1>Snake Game</h1>
+            <div class="info">
+                <p>Current Score: <span id="currentScore">0</span></p>
+                <p>Elapsed Time: <span id="elapsedTime">0</span>s</p>
+                <p>Highest Food Eaten: <span id="highestFoodEaten">0</span></p>
+                <p>Longest Time: <span id="longestTime">0</span>s</p>
+            </div>
+
+            <div class="difficulty-selection">
+                <p>Select Difficulty:</p>
+                <button id="easyBtn">Easy</button>
+                <button id="mediumBtn">Medium</button>
+                <button id="hardBtn">Hard</button>
+            </div>
+
+            <button id="startButton" disabled>Start Game</button>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="joystick-container">
+            <div class="joystick-base">
+                <div class="joystick-handle"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="eatSound" src="eat.mp3"></audio>
+    <audio id="gameOverSound" src="gameover.mp3"></audio>
+    <audio id="backgroundMusic" src="background.mp3" loop></audio>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
